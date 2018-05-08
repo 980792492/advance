@@ -8,9 +8,8 @@ import Style from './App.less'
 
 // import App2 from './App.2'
 // import App3 from './App.3'
-// import App4 from './App.4'
+import App4 from './App.4'
 
-import Schems from './schema'
 const { Header, Content } = Layout
 
 
@@ -30,8 +29,7 @@ class App extends Component {
             {/* <AppRouter /> */}
             {/* <App2 /> */}
             {/* <App3/> */}
-            {/* <App4 /> */}
-            <Schems />
+            <App4 />
           </Content>
         </Layout>
       </div>
