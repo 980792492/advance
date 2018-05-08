@@ -1,0 +1,199 @@
+{
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "success": {
+      "$id": "/properties/success",
+      "type": "boolean",
+      "title": "The Success Schema ",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "data": {
+      "$id": "/properties/data",
+      "type": "object",
+      "properties": {
+        "shopVOS": {
+          "$id": "/properties/data/properties/shopVOS",
+          "type": "array",
+          "items": {
+            "$id": "/properties/data/properties/shopVOS/items",
+            "type": "object",
+            "properties": {
+              "shopId": {
+                "$id": "/properties/data/properties/shopVOS/items/properties/shopId",
+                "type": "integer",
+                "title": "The Shopid Schema ",
+                "default": 0,
+                "examples": [
+                  194678
+                ]
+              },
+              "shopName": {
+                "$id": "/properties/data/properties/shopVOS/items/properties/shopName",
+                "type": "string",                
+                "title": "The Shopname Schema ",
+                "default": "",
+                "examples": [
+                  "托尔斯泰"
+                ]
+              },
+              "city": {
+                "$id": "/properties/data/properties/shopVOS/items/properties/city",
+                "type": "string",
+                "title": "The City Schema ",
+                "default": "",
+                "examples": [
+                  "杭州市"
+                ]
+              },
+              "district": {
+                "$id": "/properties/data/properties/shopVOS/items/properties/district",
+                "type": "string",
+                "title": "The District Schema ",
+                "default": "",
+                "examples": [
+                  "余杭区"
+                ]
+              },
+              "shopType": {
+                "$id": "/properties/data/properties/shopVOS/items/properties/shopType",
+                "type": "string",
+                "title": "The Shoptype Schema ",
+                "default": "",
+                "examples": [
+                  "宠物-宠物店"
+                ]
+              },
+              "mallType": {
+                "$id": "/properties/data/properties/shopVOS/items/properties/mallType",
+                "type": "integer",
+                "title": "The Malltype Schema ",
+                "default": 0,
+                "examples": [
+                  1
+                ]
+              },
+              "mallTypeStr": {
+                "$id": "/properties/data/properties/shopVOS/items/properties/mallTypeStr",
+                "type": "string",
+                "title": "The Malltypestr Schema ",
+                "default": "",
+                "examples": [
+                  "非商场门店"
+                ]
+              },
+              "shopLevel": {
+                "$id": "/properties/data/properties/shopVOS/items/properties/shopLevel",
+                "type": "integer",
+                "title": "The Shoplevel Schema ",
+                "default": 0,
+                "examples": [
+                  0
+                ]
+              },
+              "hasRelease": {
+                "$id": "/properties/data/properties/shopVOS/items/properties/hasRelease",
+                "type": "string",
+                "title": "The Hasrelease Schema ",
+                "default": "",
+                "examples": [
+                  "私海释放"
+                ]
+              },
+              "originTypeText": {
+                "$id": "/properties/data/properties/shopVOS/items/properties/originTypeText",
+                "type": "string",
+                "title": "The Origintypetext Schema ",
+                "default": "",
+                "examples": [
+                  "大客户"
+                ]
+              },
+              "offlineDeviceNum": {
+                "$id": "/properties/data/properties/shopVOS/items/properties/offlineDeviceNum",
+                "type": "integer",
+                "title": "The Offlinedevicenum Schema ",
+                "default": 0,
+                "examples": [
+                  0
+                ]
+              },
+              "onlineDeviceNum": {
+                "$id": "/properties/data/properties/shopVOS/items/properties/onlineDeviceNum",
+                "type": "integer",
+                "title": "The Onlinedevicenum Schema ",
+                "default": 0,
+                "examples": [
+                  0
+                ]
+              },
+              "isBind": {
+                "$id": "/properties/data/properties/shopVOS/items/properties/isBind",
+                "type": "boolean",
+                "title": "The Isbind Schema ",
+                "default": false,
+                "examples": [
+                  false
+                ]
+              },
+              "ZJSBoxList": {
+                "$id": "/properties/data/properties/shopVOS/items/properties/ZJSBoxList",
+                "type": "array"
+              },
+              "operateFlag": {
+                "$id": "/properties/data/properties/shopVOS/items/properties/operateFlag",
+                "type": "boolean",
+                "title": "The Operateflag Schema ",
+                "default": false,
+                "examples": [
+                  false
+                ]
+              },
+              "onCheck": {
+                "$id": "/properties/data/properties/shopVOS/items/properties/onCheck",
+                "type": "boolean",
+                "title": "The Oncheck Schema ",
+                "default": false,
+                "examples": [
+                  false
+                ]
+              },
+              "canSign": {
+                "$id": "/properties/data/properties/shopVOS/items/properties/canSign",
+                "type": "boolean",
+                "title": "The Cansign Schema ",
+                "default": false,
+                "examples": [
+                  false
+                ]
+              }
+            }
+          }
+        },
+        "role": {
+          "$id": "/properties/data/properties/role",
+          "type": "string",
+          "title": "The Role Schema ",
+          "default": "",
+          "examples": [
+            "CM"
+          ]
+        },
+        "totalCount": {
+          "$id": "/properties/data/properties/totalCount",
+          "type": "integer",
+          "title": "The Totalcount Schema ",
+          "default": 0,
+          "examples": [
+            2868
+          ]
+        }
+      }
+    }
+  }
+}

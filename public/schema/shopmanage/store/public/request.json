@@ -1,0 +1,37 @@
+[
+  {
+    "label": "公海来源",
+    "argument" : "hasRelease",
+    "type": "string"
+  },
+  {
+    "label": "起始来源",    
+    "argument": "originType",
+    "type": "number"
+  },
+  {
+    "label": "门店ID",
+    "argument": "shopId",
+    "type": "number"
+  },
+  {
+    "label": "门店名称",
+    "argument": "shopName",
+    "type": "string"
+  },
+  {
+    "label": "门店等级",
+    "argument": "shopLevel",
+    "type": "string"
+  },
+  {
+    "label": "所属城市",
+    "argument": "cityCode",
+    "type": "number"
+  },
+  {
+    "label": "所属区域",
+    "argument": "districtCode",
+    "type": "number"    
+  }
+]
