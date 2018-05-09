@@ -1,3 +1,5 @@
+// url参数
+
 import React from 'react'
 import {
   BrowserRouter as Router,
@@ -5,69 +7,39 @@ import {
   Link
 } from 'react-router-dom'
 
-const BasicExample = () => (
+const ParamsExample = () => (
   <Router>
     <div>
+      <h2>账号</h2>
       <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/topics">Topics</Link></li>
+        <li><Link to="/qiye/react-router">React Router</Link></li>
+        <li><Link to="/qiye/leoashin">LeoAshin</Link></li>
+        <li><Link to="/qiye/justjavac">justjavac</Link></li>
+        <li><Link to="/qiye/reacttraining">React Training</Link></li>
       </ul>
-      <hr/>
       <Route exact path="/" component={Home}/>
-      <Route path="/about" component={About}/>
-      <Route path="/topics" component={Topics}/>
+      <Route path="/qiye/:id" component={Child}/>
     </div>
   </Router>
 )
 
 const Home = () => (
-  <div>
-    <h2>Home</h2>
-  </div>
+  <div>Home</div>
 )
 
-const About = () => (
-  <div>
-    <h2>About</h2>
-  </div>
-)
-
-const Topics = ({ match }) => {
+const Child = ({ match }) => {
   console.log({match})
   return (
-  <div>
-    <h2>Topics</h2>
-    <ul>
-      <li>
-        <Link to={`${match.url}/rendering`}>
-          Rendering with React
-        </Link>
-      </li>
-      <li>
-        <Link to={`${match.url}/components`}>
-          Components
-        </Link>
-      </li>
-      <li>
-        <Link to={`${match.url}/props-v-state`}>
-          Props v. State
-        </Link>
-      </li>
-    </ul>
-    <Route path={`${match.url}/:topicId`} component={Topic}/>
-    <Route exact path={match.url} render={() => (
-      <h3>Please select a topic.</h3>
-    )}/>
-  </div>)
+    <div>
+      <h3>ID: {match.params.id}</h3>
+    </div>
+  )
 }
 
-const Topic = ({ match }) => {
-  console.log('topic', {match})
-  return (
-  <div>
-    <h3>{match.params.topicId}</h3>
-  </div>
-)
-}
-export default BasicExample
+// const Child = ({ match }) => (
+//   <div>
+//     <h3>ID: {match.params.id}</h3>
+//   </div>
+// )
+
+export default ParamsExample
